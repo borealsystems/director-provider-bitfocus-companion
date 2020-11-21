@@ -1,4 +1,4 @@
-import ConnectionProviderOSC from '../connectionProviders/ConnectionProviderOSC'
+import ConnectionProviderOSC from '../../connectionProviders/ConnectionProviderOSC'
 
 class DeviceProviderBitfocusCompanion extends ConnectionProviderOSC {
   static providerRegistration = {
