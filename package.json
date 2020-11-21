@@ -1,0 +1,10 @@
+{
+  "name": "director-provider-bitfocus-companion",
+  "version": "1.0.0",
+  "description": "Director Provider for Bitfocus Companion",
+  "main": "index.js",
+  "repository": "https://phabricator.boreal.systems/diffusion/5/director-provider-bitfocus-companion.git",
+  "author": "Oliver Herrmann <oliver@monoxane.io>",
+  "license": "GPL-3.0",
+  "private": true
+}
