@@ -4,6 +4,10 @@ class DeviceProviderBitfocusCompanion extends ConnectionProviderOSC {
   static providerRegistration = {
     id: 'DeviceProviderBitfocusCompanion',
     label: 'Bitfocus Companion',
+    manufacturer: 'Bitfocus AS',
+    protocol: 'OSC',
+    description: 'Bitfocus Companion enables the reasonably priced Elgato Streamdeck to be a professional shotbox surface for an increasing amount of different presentation switchers, video playback software and broadcast equipment.',
+    category: 'Control',
     parameters: this.parameters,
     constructor: DeviceProviderBitfocusCompanion
   }
