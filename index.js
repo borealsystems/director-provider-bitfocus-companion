@@ -19,14 +19,24 @@ class DeviceProviderBitfocusCompanion extends ConnectionProviderOSC {
       label: 'Trigger Button (Down and Up)',
       parameters: [
         {
-          inputType: 'textInput',
+          inputType: 'numberInput',
           id: 'page',
-          label: 'Page'
+          label: 'Page',
+          required: true,
+          placeholder: 'Page',
+          invalidText: 'Page Number is invalid, Companion has 99 pages of buttons available to use.',
+          min: 1,
+          max: 99
         },
         {
-          inputType: 'textInput',
+          inputType: 'numberInput',
           id: 'button',
-          label: 'Button'
+          label: 'Button',
+          required: true,
+          placeholder: 'Button',
+          invalidText: 'Button Number is invalid, Companion numbers buttons 1 though 32.',
+          min: 1,
+          max: 32
         }
       ]
     },
@@ -35,14 +45,24 @@ class DeviceProviderBitfocusCompanion extends ConnectionProviderOSC {
       label: 'Press Button (Down)',
       parameters: [
         {
-          inputType: 'textInput',
+          inputType: 'numberInput',
           id: 'page',
-          label: 'Page'
+          label: 'Page',
+          required: true,
+          placeholder: 'Page',
+          invalidText: 'Page Number is invalid, Companion has 99 pages of buttons available to use.',
+          min: 1,
+          max: 99
         },
         {
-          inputType: 'textInput',
+          inputType: 'numberInput',
           id: 'button',
-          label: 'Button'
+          label: 'Button',
+          required: true,
+          placeholder: 'Button',
+          invalidText: 'Button Number is invalid, Companion numbers buttons 1 though 32.',
+          min: 1,
+          max: 32
         }
       ]
     },
@@ -51,14 +71,24 @@ class DeviceProviderBitfocusCompanion extends ConnectionProviderOSC {
       label: 'Release Button (Up)',
       parameters: [
         {
-          inputType: 'textInput',
+          inputType: 'numberInput',
           id: 'page',
-          label: 'Page'
+          label: 'Page',
+          required: true,
+          placeholder: 'Page',
+          invalidText: 'Invalid Page number, Companion has 99 pages of buttons available to use.',
+          min: 1,
+          max: 99
         },
         {
-          inputType: 'textInput',
+          inputType: 'numberInput',
           id: 'button',
-          label: 'Button'
+          label: 'Button',
+          required: true,
+          placeholder: 'Button',
+          invalidText: 'Invalid Button, Companion numbers buttons 1 though 32.',
+          min: 1,
+          max: 32
         }
       ]
     },
@@ -67,19 +97,32 @@ class DeviceProviderBitfocusCompanion extends ConnectionProviderOSC {
       label: 'Set Button Text',
       parameters: [
         {
-          inputType: 'textInput',
+          inputType: 'numberInput',
           id: 'page',
-          label: 'Page'
+          label: 'Page',
+          required: true,
+          placeholder: 'Page',
+          invalidText: 'Page Number is invalid, Companion has 99 pages of buttons available to use.',
+          min: 1,
+          max: 99
         },
         {
-          inputType: 'textInput',
+          inputType: 'numberInput',
           id: 'button',
-          label: 'Button'
+          label: 'Button',
+          required: true,
+          placeholder: 'Button',
+          invalidText: 'Button Number is invalid, Companion numbers buttons 1 though 32.',
+          min: 1,
+          max: 32
         },
         {
           inputType: 'textInput',
           id: 'text',
-          label: 'Text'
+          label: 'Text',
+          required: true,
+          placeholder: 'New Label Text',
+          tooltip: 'This will replace the current label'
         }
       ]
     }
